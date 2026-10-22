@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="FitZone Gym and Fitness website">
+    <meta name="keywords" content="gym, fitness, workout, training, nutrition">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitZone | Gym & Fitness</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header and hyperlinks -->
+    <header id="home">
+        <nav class="navbar">
+            <h1 class="logo">FIT<span>ZONE</span></h1>
+
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#workouts">Workouts</a>
+                <a href="#plans">Plans</a>
+                <a href="#nutrition">Nutrition</a>
+                <a href="#join">Join</a>
+            </div>
+        </nav>
+
+        <div class="hero">
+            <div class="hero-text">
+                <p class="tag">TRAIN • EAT • REST • REPEAT</p>
+                <h2>Build a stronger<br><span>version of you.</span></h2>
+                <p>Simple workouts, practical nutrition and consistent habits for a healthier lifestyle.</p>
+                <a class="button" href="#join">Start Your Journey</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- HTML headings, paragraphs, image and lists -->
+        <section class="section" id="workouts">
+            <div class="section-title">
+                <p class="tag">TRAIN SMART</p>
+                <h2>Popular Workouts</h2>
+                <p>Choose a workout style that matches your goal.</p>
+            </div>
+
+            <div class="cards">
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=900&q=80"
+                         alt="People training in a gym">
+                    <div class="card-content">
+                        <h3>Strength Training</h3>
+                        <p>Build strength with compound movements and progressive training.</p>
+                        <ul>
+                            <li>Squats</li>
+                            <li>Bench Press</li>
+                            <li>Rows</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=900&q=80"
+                         alt="Person doing a fitness workout">
+                    <div class="card-content">
+                        <h3>Cardio Fitness</h3>
+                        <p>Improve endurance and cardiovascular fitness with regular activity.</p>
+                        <ol>
+                            <li>Warm up</li>
+                            <li>Cardio session</li>
+                            <li>Cool down</li>
+                        </ol>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=900&q=80"
+                         alt="Person lifting weights">
+                    <div class="card-content">
+                        <h3>Muscle Building</h3>
+                        <p>A balanced routine combining resistance training, food and recovery.</p>
+                        <ul>
+                            <li>Push exercises</li>
+                            <li>Pull exercises</li>
+                            <li>Leg exercises</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Float demonstration from CSS -->
+        <section class="about section">
+            <img class="float-image"
+                 src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=800&q=80"
+                 alt="Athlete exercising with weights">
+            <h2>Why Choose FitZone?</h2>
+            <p>
+                Fitness is not about doing everything at once. Start with small,
+                consistent habits and gradually improve your training.
+            </p>
+            <p>
+                Our simple approach combines regular workouts, balanced meals,
+                adequate recovery and realistic goals.
+            </p>
+            <a href="#nutrition">Explore Nutrition Tips →</a>
+        </section>
+
+        <!-- HTML table -->
+        <section class="section dark-section" id="plans">
+            <div class="section-title">
+                <p class="tag">MEMBERSHIP</p>
+                <h2>Choose Your Plan</h2>
+            </div>
+
+            <div class="table-wrap">
+                <table>
+                    <caption>FitZone Membership Plans</caption>
+                    <tr>
+                        <th>Plan</th>
+                        <th>Duration</th>
+                        <th>Gym Access</th>
+                        <th>Trainer</th>
+                        <th>Price</th>
+                    </tr>
+                    <tr>
+                        <td>Basic</td>
+                        <td>1 Month</td>
+                        <td>Yes</td>
+                        <td>No</td>
+                        <td>₹999</td>
+                    </tr>
+                    <tr>
+                        <td>Pro</td>
+                        <td>3 Months</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>₹2499</td>
+                    </tr>
+                    <tr>
+                        <td>Elite</td>
+                        <td>6 Months</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>₹4499</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <!-- Lists + basic JavaScript BMI calculator -->
+        <section class="section" id="nutrition">
+            <div class="section-title">
+                <p class="tag">FUEL YOUR BODY</p>
+                <h2>Simple Nutrition Rules</h2>
+            </div>
+
+            <div class="nutrition-grid">
+                <div class="info-box">
+                    <h3>Daily Checklist</h3>
+                    <ul>
+                        <li>Eat enough protein.</li>
+                        <li>Include fruits and vegetables.</li>
+                        <li>Drink enough water.</li>
+                        <li>Choose mostly whole foods.</li>
+                        <li>Get adequate sleep.</li>
+                    </ul>
+                </div>
+
+                <div class="calculator">
+                    <h3>BMI Calculator</h3>
+                    <p>Enter your height and weight.</p>
+
+                    <label for="height">Height (cm)</label>
+                    <input type="number" id="height" placeholder="e.g. 170">
+
+                    <label for="weight">Weight (kg)</label>
+                    <input type="number" id="weight" placeholder="e.g. 65">
+
+                    <button class="button" onclick="calculateBMI()">Calculate BMI</button>
+                    <p id="bmiResult">Your result will appear here.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- HTML5 form input types -->
+        <section class="section form-section" id="join">
+            <div class="section-title">
+                <p class="tag">GET STARTED</p>
+                <h2>Join FitZone</h2>
+                <p>Fill in the form and choose a membership plan.</p>
+            </div>
+
+            <form id="joinForm" onsubmit="submitForm(event)">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" maxlength="30" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="date">Preferred Start Date</label>
+                <input type="date" id="date" name="date">
+
+                <label for="plan">Membership Plan</label>
+                <select id="plan" name="plan" onchange="showPlanMessage()">
+                    <option value="Basic">Basic</option>
+                    <option value="Pro">Pro</option>
+                    <option value="Elite">Elite</option>
+                </select>
+
+                <label for="goal">Fitness Goal</label>
+                <input type="text" id="goal" name="goal" placeholder="e.g. Build muscle">
+
+                <label for="experience">Training Experience</label>
+                <input type="range" id="experience" name="experience" min="1" max="10" value="5">
+
+                <p id="planMessage">Basic plan selected.</p>
+
+                <div class="form-buttons">
+                    <input class="button" type="submit" value="Join Now">
+                    <input class="reset-button" type="reset" value="Reset">
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <h2>FIT<span>ZONE</span></h2>
+        <p>Gym & Fitness | Train with purpose.</p>
+        <p>
+            <a href="#home">Back to Top</a> |
+            <a href="mailto:fitzone@example.com">Email Us</a>
+        </p>
+        <p class="copyright">&copy; 2026 FitZone. Educational project.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
