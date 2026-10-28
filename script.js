@@ -49,6 +49,13 @@ function showPlanMessage() {
     message.textContent = text;
 }
 
+// Automatically update plan message on initial load if plan element exists
+document.addEventListener("DOMContentLoaded", function() {
+    if (document.getElementById("plan")) {
+        showPlanMessage();
+    }
+});
+
 function submitForm(event) {
     event.preventDefault();
 
